@@ -1,7 +1,6 @@
 from fastapi import Depends, HTTPException, status
 
 from repositories.users import UserRepository
-from schemas.users import UserSchema
 from utils.hash import hash_password
 
 
