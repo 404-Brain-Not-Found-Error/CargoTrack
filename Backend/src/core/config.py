@@ -1,5 +1,4 @@
 from pydantic_settings import BaseSettings, SettingsConfigDict
-from pydantic import PostgresDsn
 
 
 class Settings(BaseSettings):
@@ -8,9 +7,7 @@ class Settings(BaseSettings):
     app_debug: bool = False
 
     # DB
-    db_url: PostgresDsn = (
-        "postgresql+asyncpg:///postgres:password@localhost:5432/postgres"
-    )
+    db_url: str = "sqlite+aiosqlite:///./test.sqlite3"
     db_echo: bool = False
 
     model_config = SettingsConfigDict(
