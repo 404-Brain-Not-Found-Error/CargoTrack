@@ -6,7 +6,7 @@ fast_argon2 = argon2.using(
 )
 
 
-def hash_password(password: str):
+def hash_password(password: str) -> str:
     return fast_argon2.hash(password)
 
 

@@ -7,3 +7,8 @@ class UserSchema(BaseModel):
         min_length=8,
         max_length=32,
     )
+
+
+class TokenResponseSchema(BaseModel):
+    access_token: str
+    token_type: str = "bearer"

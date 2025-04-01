@@ -10,6 +10,10 @@ class Settings(BaseSettings):
     db_url: str = "sqlite+aiosqlite:///./test.sqlite3"
     db_echo: bool = False
 
+    # JWT
+    secret_key: str = "some_secret_key"
+    algorithm: str = "HS256"
+
     model_config = SettingsConfigDict(
         env_file=".env",
         env_file_encoding="utf-8",
