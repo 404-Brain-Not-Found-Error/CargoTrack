@@ -31,7 +31,7 @@ async def user_login(user_data: UserSchema, response: Response, db: AsyncSession
         httponly=True,
         secure=True,
         samesite="lax",
-        max_age=3600,
+        max_age=7 * 24 * 3600,
         path="/",
     )
 
