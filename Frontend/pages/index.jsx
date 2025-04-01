@@ -1,7 +1,11 @@
 import { Header } from "../components/header";
+import { LoginChoose } from "../components/LoginChoose";
 
 export default function Homepage() {
-  return( 
-    <Header/>
-  ) 
+  return (
+    <div>
+      <Header />
+      <LoginChoose></LoginChoose>
+    </div>
+  );
 }

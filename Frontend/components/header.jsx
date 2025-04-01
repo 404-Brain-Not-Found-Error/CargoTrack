@@ -2,13 +2,15 @@ import Image from "next/image";
 import logo from "./icons/Cargo.png";
 
 export function Header() {
-    return (
-      <header className="flex h-[100px] items-center px-8 shadow-xl">
-        <Image src={logo} alt="Logo" width={65} height={65} />
-        <div className="w-px h-8 bg-slate-200 mx-6"></div>
-        <div className="text-2xl font-semibold tracking-wide text-slate-800 hover:text-blue-600 transition-colors">
+  return (
+    <header className="flex h-[80px] items-center justify-between px-8 shadow-md bg-white fixed w-full top-0 z-50">
+      <div className="flex items-center">
+        <Image src={logo} alt="Logo" width={50} height={50} priority />
+        <div className="w-px h-8 bg-slate-300 mx-4"></div>
+        <div className="text-xl font-bold tracking-wide text-slate-900 hover:text-blue-700 transition-colors duration-300">
           CargoTrack
         </div>
-      </header>
-    );
-  }
+      </div>
+    </header>
+  );
+}
