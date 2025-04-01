@@ -14,6 +14,9 @@ class Settings(BaseSettings):
     secret_key: str = "some_secret_key"
     algorithm: str = "HS256"
 
+    #CORS
+    allowed_origins: list[str] = ["http://localhost:3000"]
+
     model_config = SettingsConfigDict(
         env_file=".env",
         env_file_encoding="utf-8",
