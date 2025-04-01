@@ -1,5 +1,11 @@
+import { Header } from "../components/header";
+import { LoginChoose } from "../components/LoginChoose";
+
 export default function Homepage() {
-  return(
-    <div className="bg-black text-white flex justify-center text-3xl">CargoTrack</div>
-  ) 
+  return (
+    <div>
+      <Header />
+      <LoginChoose></LoginChoose>
+    </div>
+  );
 }
