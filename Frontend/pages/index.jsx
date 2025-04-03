@@ -1,10 +1,10 @@
-import { Header } from "../components/header";
-import { LoginChoose } from "../components/LoginChoose";
+import { MainLoginHeader } from "../components/LoginChoose/MainLoginHeader";
+import { LoginChoose } from "../components/LoginChoose/LoginChoose";
 
 export default function Homepage() {
   return (
     <div>
-      <Header />
+      <MainLoginHeader />
       <LoginChoose></LoginChoose>
     </div>
   );
