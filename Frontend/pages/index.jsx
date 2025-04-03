@@ -1,11 +1,11 @@
-import { MainLoginHeader } from "../components/LoginChoose/MainLoginHeader";
-import { LoginChoose } from "../components/LoginChoose/LoginChoose";
+import { MainLoginHeader } from "../components/MainLoginHeader";
+import { LoginChoose } from "../components/LoginChoose";
 
 export default function Homepage() {
   return (
     <div>
-      <MainLoginHeader />
-      <LoginChoose></LoginChoose>
+      <header><MainLoginHeader /></header>
+      <main><LoginChoose></LoginChoose></main>
     </div>
   );
 }
