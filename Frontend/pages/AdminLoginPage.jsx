@@ -1,3 +1,4 @@
+import Login from "../components/Login";
 import { MainLoginHeader } from "../components/MainLoginHeader";
 export default function Homepage() {
   return (
@@ -8,7 +9,7 @@ export default function Homepage() {
         </MainLoginHeader>
       </header>
       <main>
-        <div className="mt-28 flex justify-center">LoginForm</div>
+        <div className="mt-28 flex justify-center"><Login/></div>
       </main>
     </div>
   );
